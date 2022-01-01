@@ -1,0 +1,6 @@
+- lire les phrases de contexte en foncion du verbe
+- creer user (avec login, email, mdp)
+- lire les question carre + lire le verbe solution + lire 3 autres verbes random
+- mettre à jour les winrate pour les question 
+- mettre à jour les scores pour les level 
+- lire les question triangle + lire les trois formes du verbe solution 
