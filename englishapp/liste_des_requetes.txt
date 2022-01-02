@@ -1,5 +1,9 @@
 - lire les phrases de contexte en foncion du verbe
-- creer user (avec login, email, mdp)
+    une fois que l'on affiche le verbe, 
+        recuperer son id 
+        rechercher la ligne avec les phrase pour l'id du verbe selectionne 
+        lire les 3 phrases 
+- gerer user (avec login, email, mdp)
 - lire les question carre + lire le verbe solution + lire 3 autres verbes random
 - mettre à jour les winrate pour les question 
 - mettre à jour les scores pour les level 
