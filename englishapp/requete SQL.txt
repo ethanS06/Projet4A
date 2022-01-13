@@ -6,3 +6,7 @@ INSERT INTO `verbe` (`id`, `infinitif`, `passe_simple`, `participe_passe`, `trad
 SELECT infinitif , passe_simple, participe_passe, traduction FROM verbe
 
 SELECT winrate FROM verbe  WHERE id = 2 LIMIT 0,1
+
+
+SELECT question, solution FROM question_carre WHERE id_niveau = 1 LIMIT 10
+SELECT infinitif, passe_simple, participe_passe FROM verbe v INNER JOIN question_carre q IN ON v.id = q.id_verbe WHERE v.id != q.id_verbe

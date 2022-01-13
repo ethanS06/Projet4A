@@ -1,10 +1,58 @@
-- lire les phrases de contexte en foncion du verbe
+-// lire les phrases de contexte en foncion du verbe
     une fois que l'on affiche le verbe, 
         recuperer son id 
         rechercher la ligne avec les phrase pour l'id du verbe selectionne 
         lire les 3 phrases 
-- gerer user (avec login, email, mdp)
+- //gerer user (avec login, email, mdp)
 - lire les question carre + lire le verbe solution + lire 3 autres verbes random
+    en PHP 
+    lire la question  select where id
+    lire 3 verbes (infinitif, passe simple, participe passe ) /// faire un select order by random, puis limit 3 pour recuperer 3 verbes aleatoires
+    en JS
+    creer un tableau 3 cases , case 0: infinitif , case 1 : passe simple , case 2 : participe passe
+    pour i allant de  1 à 3
+        choisir aleatoirement un nombre x entre 0 et 2
+        recuperer le tableau[x] du verbe i
+    inserer les 4 verbes dans des balise div//
+    
 - mettre à jour les winrate pour les question 
 - mettre à jour les scores pour les level 
 - lire les question triangle + lire les trois formes du verbe solution 
+
+
+pour les questions?
+    est ce qu'on lit pas 10 question directement en une requete sql
+    ca permettra de les stocker dans un tableau a plusieurs dimensions, 
+    1ere dim = question
+    2 eme dim = reponse a la question
+    
+    quand on charge la page :
+        on affiche la question stocke dans la case 1 du tableau 
+        on selectionne un nombre random entre 0 et 3 
+        en fonction du nombre on place la réponse dans une des quatres div
+        pour les 3 autres cases
+            on lit 3 verbes en n'excluant le verbe solution grace a l'id du verbe 
+            on les affiches dans les autres divisions
+        
+    quand on clique sur "next":
+        on recupere l'innerHtml de la div clické
+        on test si le verbe clicke est egal au verbe solution 
+            si oui:
+                on incrémente un score global
+                //on gere le winrate
+            si non :
+                //on gere le winrate
+        si on est pas encore a la fin du tableau :
+            on affiche la question dans la casse i+1 et on refait comme sur le onload
+        si on est a la fin:
+            on recupere le score du test
+           ( on affiche une page avec le texte "votre score est :" + le score
+            on click sur un bouton ok pour retourner au menu d'accueil)
+
+
+on select les 10 questions
+on les range dans un tableau 
+on parcours le tableau   
+    pour chaque case (= question) 
+        on select 3 verbes dont l'id different de l'idverbe de la question et dont le niveau est le meme 
+            

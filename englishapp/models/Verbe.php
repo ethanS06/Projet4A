@@ -74,6 +74,28 @@ class Verbe{
         $this->traduction = $row['traduction'];
     }
 
+     /**
+     * Lecture des produits
+     *
+     * @return void
+     */
+    public function lire3verbes(){
+        // On écrit la requête
+        $sql = "SELECT infinitif , passe_simple, participe_passe, traduction FROM " . $this->table . " WHERE id != ? ORDER BY RAND() LIMIT 3";
+        
+      // On prépare la requête
+      $query = $this->connexion->prepare( $sql );
+
+      // On attache l'id
+      $query->bindParam(1, $this->id);
+
+      // On exécute la requête
+      $query->execute();
+
+    // On retourne le résultat
+    return $query;
+    }
+
     /**
      * Mettre à jour un produit
      *
