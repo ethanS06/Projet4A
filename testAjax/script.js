@@ -25,7 +25,7 @@ window.onload = function(){
     
 }       
 
-req.open("GET" , "http://localhost/englishapp/verbe/lire_verbe.php" , true);
+req.open("GET" , "http://localhost/englishapp/verbe/lire_verbe_niv1.php" , true);
 
 req.send();
 

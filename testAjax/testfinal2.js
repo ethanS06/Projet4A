@@ -222,24 +222,7 @@ window.onload = function(){
 
 
 
-/*
-    nexx.addEventListener('click', ()=>{
-        i+=1;
-        window.read_question((tab) => {
-            let reponses = ["reponse A" , "reponse B" , "reponse C"];
-            question.innerHTML = tab[i][0];
-            var position = Math.floor(Math.random() * 4);
-            reponses.splice(position , 0 , tab[i][1]);
-            reponse1.innerHTML = reponses[0];
-            reponse2.innerHTML = reponses[1];
-            reponse3.innerHTML = reponses[2];
-            reponse4.innerHTML = reponses[3];
-            //console.log(tab[i][1]);
-            //console.log(tab[i][2]);
 
-    })
-    })*/
-    
    
 }
 
