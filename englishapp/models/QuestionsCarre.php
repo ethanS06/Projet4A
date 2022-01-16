@@ -97,7 +97,7 @@ class QuestionCarre{
      */
     public function lire10questionsniv1(){
         // On écrit la requête
-        $sql = "SELECT question , solution , id_verbe FROM " . $this->table . " WHERE id_niveau = 1  LIMIT 10 ";
+        $sql = "SELECT question , solution , id_verbe , id_forme FROM " . $this->table . " WHERE id_niveau = 1  ORDER BY RAND() LIMIT 10 ";
         
         // On prépare la requête
         $query = $this->connexion->prepare($sql);

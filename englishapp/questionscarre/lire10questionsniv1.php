@@ -46,6 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
                "question" => $question,
                "solution" => $solution,
                "id_verbe" => $id_verbe,
+               "id_forme" => $id_forme,
 
                 
          ];
