@@ -126,6 +126,27 @@ class Verbe{
         return false;
     }
 
+
+    /**
+     * Lecture des produits
+     *
+     * @return void
+     */
+    public function lire_verbe_niv1(){
+        // On écrit la requête
+        $sql = "SELECT infinitif , passe_simple, participe_passe, traduction FROM verbe WHERE difficulte = 1";
+        
+        // On prépare la requête
+        $query = $this->connexion->prepare($sql);
+        
+        // On exécute la requête
+        
+        $query->execute();
+        
+
+        // On retourne le résultat
+        return $query;
+    }
 }
 ?>
 
