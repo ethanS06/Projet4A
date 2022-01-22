@@ -1,0 +1,12 @@
+INSERT INTO `verbe` (`id`, `infinitif`, `passe_simple`, `participe_passe`, `traduction`,`winrate`,`difficulte`,`id_phrase_ctxt`,`created_at`,`updated_at`) VALUES
+(1, 'be', 'was/were','been' , 'etre', 10.0, 2,5 ,'2019-06-01 00:32:07', '2019-08-30 15:34:33'),
+(2, 'have', 'had','had' , 'avoir', 15.2,3, 8,'2019-06-01 00:32:07', '2019-08-30 15:34:33')
+
+
+SELECT infinitif , passe_simple, participe_passe, traduction FROM verbe
+
+SELECT winrate FROM verbe  WHERE id = 2 LIMIT 0,1
+
+
+SELECT question, solution FROM question_carre WHERE id_niveau = 1 LIMIT 10
+SELECT infinitif, passe_simple, participe_passe FROM verbe v INNER JOIN question_carre q IN ON v.id = q.id_verbe WHERE v.id != q.id_verbe
