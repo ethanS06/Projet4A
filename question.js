@@ -75,13 +75,13 @@ window.onload = function(){
                 score+=1 ;
                 console.log(score); 
             }
-            window.alert("Congratulations your score is: \n" + score +"/10");
-            window.location.reload;
+            alert("Congratulations your score is: \n" + score +"/10");
+            window.location = '../../Test_Homepage2/homepage.html';
                
             }
     else{
-        window.alert("Congratulations your score is: \n" + score +"/10");
-        window.location.reload;
+        alert("Congratulations your score is: \n" + score +"/10");
+        window.location = '../../Test_Homepage2/homepage.html';
     }
     })
 
@@ -119,13 +119,13 @@ window.onload = function(){
                 console.log(score);
                     
             }
-            window.alert("Congratulations your score is: \n" + score +"/10");
-            window.location.reload;
+            alert("Congratulations your score is: \n" + score +"/10");
+            window.location = '../../Test_Homepage2/homepage.html';
             
         }
         else{
-            window.alert("Congratulations your score is: \n" + score +"/10");
-            window.location.reload;
+            alert("Congratulations your score is: \n" + score +"/10");
+            window.location = '../../Test_Homepage2/homepage.html';
         }
     })
 
@@ -161,13 +161,13 @@ window.onload = function(){
             console.log(score);
                 
         }
-        window.alert("Congratulations your score is: \n" + score +"/10");
-        window.location.reload;
+        alert("Congratulations your score is: \n" + score +"/10");
+        window.location = '../../Test_Homepage2/homepage.html';
             
     }
     else{
-        window.alert("Congratulations your score is: \n" + score +"/10");
-        window.location.reload;
+        alert("Congratulations your score is: \n" + score +"/10");
+        window.location = '../../Test_Homepage2/homepage.html';
     }
     })
 
@@ -203,13 +203,13 @@ window.onload = function(){
             console.log(score);
                 
         }
-        window.alert("Congratulations your score is: \n" + score +"/10");
-        window.location.reload;
+        alert("Congratulations your score is: \n" + score +"/10");
+        window.location = '../../Test_Homepage2/homepage.html';
         
     }
     else{
-        window.alert("Congratulations your score is: \n" + score +"/10");
-        window.location.reload;
+        alert("Congratulations your score is: \n" + score +"/10");
+        window.location = '../../Test_Homepage2/homepage.html';
     }
     })
 
